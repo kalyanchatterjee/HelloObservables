@@ -8,5 +8,5 @@ One requirement is that the user must be able to see some kind of a message whil
 # To run this project
 - Clone this project
 - Go to the root
-- Type [b]npm install[/b] 
-- Once the node modules are installed, run ng serve --open
+- Type **npm install**
+- Once the node modules are installed, run **ng serve --open**
