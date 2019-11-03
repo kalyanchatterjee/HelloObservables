@@ -6,6 +6,18 @@ The application fetches a simple users JSON from an open API and displays them i
 
 One requirement is that the user must be able to see some kind of a message while the data in being fetched (asynchronously) from the API.
 
+## Initial load
+
+![](page1.png)
+
+## Changed in dropdown - Display "Loading..."
+
+![](loading.png)
+
+## Display Page 2 contents
+
+![](page2.png)
+
 # To run this project
 
 - Clone this project
