@@ -37,6 +37,6 @@ export class DatacontainerComponent implements OnInit {
         err => console.log(err)
         // () => console.log("Done loading users")
       );
-    }, 10000);
+    }, 1000);
   }
 }
