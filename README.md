@@ -10,7 +10,7 @@ One requirement is that the user must be able to see some kind of a message whil
 
 ![](page1.png)
 
-## Changed in dropdown - Display "Loading..."
+## Selecting Page 2 - Display "Loading..."
 
 ![](loading.png)
 
