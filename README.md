@@ -1,27 +1,14 @@
 # HelloObservables
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
+This projects shows how to use Observables in Angular and more importantly how to use Subjects to communicate between components.
 
-## Development server
+The application fetches a simple users JSON from an open API and displays them in a component called DataContainer. Then there is another component (not a child or a parent) called Filter which has a simple drop down which allows the user to see Page 1 or Page 2 of the API data.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+One requirement is that the user must be able to see some kind of a message while the data in being fetched (asynchronously) from the API.
 
-## Code scaffolding
+# To run this project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Clone this project
+- Go to the root
+- Type **npm install**
+- Once the node modules are installed, run **ng serve --open**
