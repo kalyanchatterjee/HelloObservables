@@ -1,0 +1,9 @@
+<h1>Users</h1>
+<div *ngIf="loaded">
+  <div *ngFor="let user of users">
+    <p>{{user.last_name}}, {{user.first_name}}</p>
+  </div>
+</div>
+<div style="margin-top: 80px;">
+  <h4 *ngIf="!loaded"><em>Loading...</em></h4>
+</div>
