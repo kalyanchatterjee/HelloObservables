@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, OnDestroy } from "@angular/core";
 import { UsersService } from "../../services/users.service";
 
 import { IUser } from "../../models/user";
@@ -8,7 +8,7 @@ import { IUser } from "../../models/user";
   templateUrl: "./datacontainer.component.html",
   styleUrls: ["./datacontainer.component.css"]
 })
-export class DatacontainerComponent implements OnInit {
+export class DatacontainerComponent implements OnInit, OnDestroy {
   users: IUser[];
   loaded: boolean;
   pageNumber: number;
@@ -22,6 +22,10 @@ export class DatacontainerComponent implements OnInit {
       this.loaded = false;
       this.refreshData(parseInt(data));
     });
+  }
+
+  ngOnDestroy() {
+    this.usersService.parameterChange.unsubscribe();
   }
 
   refreshData(pageNumber: number) {
